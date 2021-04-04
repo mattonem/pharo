@@ -44,7 +44,7 @@ HDTestReport class >> runClasses: aCollectionOfClasses named: aString [
 		ifTrue: [ ^ nil ].
 		
 	classes
-		do: [ :each | suite addTests: each buildSuite tests ].
+		do: [ :each | suite addTests: each buildSuite ].
 	^ self runSuite: suite
 ]
 
